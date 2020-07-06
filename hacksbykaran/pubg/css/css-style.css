@@ -1,0 +1,439 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Teko:300,400,500");
+*,*:before,*:after {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body {
+	background: #fff;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	margin: 0;
+	font-family: 'Teko';
+}
+.container {
+	background: url(../images/img-container.png) no-repeat center center fixed;
+    background-size: cover;
+	position: relative;
+	margin: 0px auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	max-width: 400px;
+	height: 700px;
+	border-radius: 10px;
+}
+.container-mask {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.header {
+    width: 100%;
+    color: #DAE51C;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    position: relative;
+}
+.header b {
+    margin-left: 6px;
+}
+.header span {
+    font-size: 13px;
+    text-align: left;
+    text-decoration: underline;
+    margin: 6px;
+}
+.header img {
+    width: 60;
+    float: right;
+}
+.box {
+    width: 100%;
+    height: 400px;
+    margin-top: 10%;
+    margin-bottom: 0px;
+    position: absolute;
+    overflow: none;
+    color: #ffbb40;
+}
+.finish {
+    background: #DAE51C;
+    width: 93%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    color: #000;
+    font-size: 15px;
+    text-align: left;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: block;
+}
+.finish img {
+    width: 80;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+.finish span {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+}
+.menu {
+    background: url(../images/img-btn.png) no-repeat center center fixed;
+    background-size: 100% 100%;
+    width: 45%;
+    height: auto;
+    padding: 5px;
+    margin: 3px;
+    margin-bottom: 15px;
+    color: #000;
+    text-align: center;
+    border-radius: 30px;
+    display: inline-block;
+}
+.active {
+    text-decoration: underline;
+}
+.scroll {
+    overflow: scroll;
+    position: relative;
+    height: 415px;
+    scrollbar-face-color: #ffbb40; 
+    scrollbar-shadow-color: #ffbb40; 
+    scrollbar-highlight-color: #ffbb40; 
+    scrollbar-3dlight-color: #ffbb40; 
+    scrollbar-darkshadow-color: #ffbb40; 
+    scrollbar-track-color: #ffbb40; 
+    scrollbar-arrow-color: #ffbb40;
+}
+.alert {
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(218, 229, 28));
+    width: 93%;
+    height: auto;
+    padding: 7px;
+    margin: 12px;
+    color: #000;
+    text-align: left;
+    border-left: 3px solid #000;
+}
+.item {
+	background:#fff;
+	width: 30%;
+	height: 110px;
+	margin: 2px;
+	margin-bottom: 35px;
+	color: #000;
+	font-family: Teko;
+	font-weight: 300;
+	text-align: center;
+	border-radius: 10px;
+	display: inline-block;
+}
+.item img {
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.item button {
+    background: url(../images/img-btn.png) no-repeat center center fixed;
+    background-size: 100% 100%;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    color: #000;
+    font-family: 'Teko';
+    border: none;
+    border-top: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+}
+.item img, .item button {
+    border: 1px solid #DAE51C;
+}
+.balance {
+    background: #DAE51C;
+    width: 93%;
+    height: auto;
+    position: absolute;
+    padding: 10px;
+    margin: 12px;
+    margin-top: 3px;
+    color: #000;
+    border: 1px solid #DAE51C;
+    border-radius: 5px;
+}
+.balance p {
+    font-size: 15px;
+    font-weight: bold;
+    float: left;
+}
+.balance p span {
+    background: #000;
+    color: #DAE51C;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 25px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 3px;
+    float: left;
+}
+.balance button {
+    background: url(../images/img-btn.png) no-repeat center center fixed;
+    background-size: 100% 100%;
+    width: 30%;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 25px;
+    color: #000;
+    font-family: 'Teko';
+    float: right;
+    border: 1px solid #000;
+    border-radius: 30px;
+    outline: none;
+}
+.uc-quantity {
+    width: 20;
+    margin-top: 1px;
+    margin-right: 5px;
+    float: left;
+}
+.uc {
+    width: 20;
+    margin-top: 1px;
+    float: left;
+}
+.popup {
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:9999;
+	background-color:rgba(0, 0, 0, 0.4);
+}
+.nav-popup {
+	background: url(../images/img-btn.png) no-repeat center center fixed;
+    background-size: 100% 100%;
+	height: auto;
+	border: 4px;
+	padding: 10px;
+	border-radius: 10px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border: 1px solid #DAE51C;
+}
+.nav-popup h2 {
+	color: #000;
+	margin-bottom: 0px;
+	text-align: center;
+}
+.popup-box {
+    background:#fff;
+	width: 375px;
+	height: auto;
+	position: relative;
+	margin:50px auto;
+	margin-top: 15%;
+	text-align: center;
+	font-family:'Teko';
+	color:#000;
+	border-radius: 10px;
+}
+.popup-notice {
+    width: 50%;
+    height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    border: 1px solid #DAE51C;
+    border-radius: 2px;
+}
+.popup img {
+    width: 100;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 10px;
+}
+.btn-login {
+    width: 93%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding: 8px;
+    color: #000;
+    font-family: 'Teko';
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    display: block;
+}
+.btn-login i {
+    margin-top: 2px;
+    float: left;
+}
+.btn-facebook {
+    background: #3b5998;
+    color: #fff;
+}
+.btn-twitter {
+    background: #08a0e9;
+    color: #fff;
+}
+.btn-google {
+    background: #1da462;
+    color: #fff;
+}
+.myinput, select {
+	background: #DAE51C;
+	width: 93%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	padding: 8px;
+	color: #000;
+	font-size: 15px;
+	font-family: Teko;
+	border: 1px solid #000;
+	border-radius: 5px;
+	position: relative;
+	outline: none;
+	display: block;
+}
+.btn-form {
+    background: url(../images/img-btn.png) no-repeat center center fixed;
+    background-size: 100% 100%;
+    width: 30%;
+    height: auto;
+    padding: 8px;
+    margin: 5px;
+    color: #000;
+    font-family: 'Teko';
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    display: inline-block;
+}
+.icon-confirm {
+    color: #DAE51C;
+    margin-top: 10%;
+}
+.popup-login {
+    background: rgba(0, 0, 0, 0.5);
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:9999;
+}
+.popup-box-login-fb {
+    background: #ECEFF6;
+	max-width: 330px;
+	height: auto;
+	position: relative;
+	margin: 50px auto;
+	margin-top: 10%;
+	text-align: center;
+	font-family: 'Teko';
+	color: #000;
+	border-radius: 10px;
+}
+.popup-box-login-twitter {
+    background: #fff;
+	max-width: 330px;
+	height: 350px;
+	position: relative;
+	margin: 50px auto;
+	margin-top: 10%;
+	text-align: center;
+	font-family: 'Teko';
+	color: #000;
+	border-radius: 10px;
+}
+.close-fb {
+    background: #000;
+	width: 20px;
+	height: 20px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	border: 1.5px solid #fff;
+	position: absolute;
+	top: -8px;
+	right: -10px;
+	display: block;
+}
+.close-fb i {
+    color: #fff;
+    padding-top: 1px;
+}
+.close-other {
+    background: #000;
+	width: 20px;
+	height: 20px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	border: 1.5px solid #fff;
+	top: -8px;
+	right: -10px;
+	position: absolute;
+	z-index: 9999999;
+	display: block;
+}
+.close-other i {
+    color: #fff;
+    padding-top: 1px;
+}
+fieldset {
+	width: 100%;
+	margin: 0px;
+    padding: 0px;
+    border: none;
+}
+@media only screen and (max-width:600px) {
+    .container, .container-mask {
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 0px;
+        padding: 0px;
+    }
+    .scroll {
+        height: 330px;
+    }
+    .item {
+        height: 100px;
+    }
+    .popup-box {
+	    width: 340px;
+	    margin-top: 10%;
+	}
+	.popup-box-login-fb {
+	    margin-top: 5%;
+	}
+}
